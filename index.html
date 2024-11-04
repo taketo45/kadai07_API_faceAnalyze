@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face Detection App</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <!-- グラフ表示のためにchart.jsを読み込み -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- ログイン状態表示エリア -->
-    <div id="authContainer" class="auth-container">
-        <div id="userInfo" style="display: none;">
-            <span id="userName"></span>
-            <button id="logoutButton">ログアウト</button>
+    <header>
+        <div class="header-left">
+            <h1 class="header-logo"><img src="img/MentalAnalyzer.png" alt="タイトルロゴ"></h1>
         </div>
-        <button id="loginButton">Googleでログイン</button>
+        <div class="header-center">
+            <h2>えもメーター</h2>
+        </div>
+        <div class="header-right">
+            <!-- ログイン状態表示エリア -->
+            <div id="authContainer" class="auth-container">
+                <div id="userInfo" style="display: none;">
+                    <span id="userName"></span>
+                    <button id="logoutButton" class="btn">ログアウト</button>
+                </div>
+                <button id="loginButton" class="btn">Googleでログイン</button>
+        </div>
+    </header>
     </div>
 
     <!-- メインコンテンツ（ログイン後に表示） -->
